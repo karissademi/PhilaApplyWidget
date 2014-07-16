@@ -1,7 +1,7 @@
 <?php
 /* Plugin Name: Phila Obtain Widget
 Plugin URI: localhost/wordpress
-Description: Displays Obtainabe Items
+Description: Displays Obtainable Items
 Version: 1.0
 Author: Karissa Demi
 Author URI: localhost/wordpress
@@ -25,7 +25,7 @@ $message = <<<EOM
                             <option value="http://secureprod.phila.gov/wills/marriagelicense.aspx">Marriage License</option>
                             <option value="http://www.philadelphiastreets.com/index.php/complete-streets-handbook">Street Closure</option>
                 </select>
-                <select rows="2" name="PhilaPermitJumpMenu" id="PhilapermitJumpMenu" onchange="javascript:document.location = this.value;">
+                <select rows="2" name="PhilaPermitJumpMenu" id="PhilaPermitJumpMenu" onchange="javascript:document.location = this.value;">
                         <option value="#">Permits</option>
                             <option value="http://www.phila.gov/health/AirManagement/AirPermittingForms.html">Air Pollution</option>
                             <option value="http://www.phila.gov/health/AirManagement/AsbestosControl.html">Asbestos Control</option>
@@ -39,7 +39,7 @@ $message = <<<EOM
                             <option value="https://secure.phila.gov/Streets/HaulingPermit/">Special Hauling Permit</option>
                             <option value="http://www.phila.gov/health/permitsForms.html">Tobacco Retailer Permit</option>
                 </select>
-                <select rows="2" name="PhilaPermitJumpMenu" id="PhilapermitJumpMenu" onchange="javascript:document.location = this.value;">
+                <select rows="2" name="PhilaCertificateJumpMenu" id="PhilaCertificateJumpMenu" onchange="javascript:document.location = this.value;">
                         <option value="#">Certificates</option>
                             <option value="http://www.portal.state.pa.us/portal/server.pt/community/birth_certificates/14121">Birth Certificate</option>
                             <option value="https://business.phila.gov/Pages/Result.aspx?stage=Start&type=All%20Business%20Types&section=Permits%20%26%20Certificates">Business</option>
@@ -50,6 +50,7 @@ $message = <<<EOM
 				</select>
 			</div>
 		</div>
+        </div>
     
 EOM;
 
