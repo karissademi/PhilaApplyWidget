@@ -1,20 +1,20 @@
 <?php
-/* Plugin Name: Phila Obtain Widget
+/* Plugin Name: Phila Apply Widget
 Plugin URI: localhost/wordpress
-Description: Displays Obtainable Items
+Description: Displays Applyable Items
 Version: 1.0
 Author: Karissa Demi
 Author URI: localhost/wordpress
 */
-add_shortcode('PhilaObtainWidget', 'philaobtain_handler');
+add_shortcode('PhilaApplyWidget', 'philaapply_handler');
 
-function philaobtain_handler(){
+function philaapply_handler(){
 $message = <<<EOM
  
-<div id="PhilaObtainWidget" class="PhilaWidget">
-    <h1 class="PhilaWidgetTitle">Obtain</h1>
-        <div id="PhilaObtainLinkBlock">
-			<div class="PhilaObtainDropDown">
+<div id="PhilaApplyWidget" class="PhilaWidget">
+    <h1 class="PhilaWidgetTitle">Apply</h1>
+        <div id="PhilaApplyLinkBlock">
+			<div class="PhilaApplyDropDown">
 				<select rows="2" name="PhilaLicenceJumpMenu" id="PhilaLicenceJumpMenu" onchange="javascript:document.location = this.value;" class="pick-me" data-class="licence-drop-down">
 					<option value="">Licences</option>
                             <option value="http://www.acctphilly.org/">Animal License</option>
@@ -57,10 +57,10 @@ EOM;
 return $message;
 }
 
-function philaobtainwidget($args, $instance) { // widget sidebar output
+function philaapplywidget($args, $instance) { // widget sidebar output
   extract($args, EXTR_SKIP);
   echo $before_widget; // pre-widget code from theme
-  echo philaobtain_handler();
+  echo philaapply_handler();
   echo $after_widget; // post-widget code from theme
 }
 ?>
